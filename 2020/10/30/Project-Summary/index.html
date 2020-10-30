@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Megan" />
+  
+  
+  <title>Project Summary | Megan&#39;s Blog</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+    <meta name="keywords" content="Hexo, Theme-AD" />
+  
+
+  
+  <meta name="description" content="">
+
+  
+
+  
+
+  
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  
+
+  
+
+  
+
+  <script>
+  // theme-ad's config script
+  // it can be used in every script
+  
+  window.AD_CONFIG = {
+    leancloud: {"appid":"Hyq9wkH495DgNHWhDQCOfQSp-gzGzoHsz","appkey":"WaR7nrzhliHj9aVwdQzkdlGd","comment":false,"count":false},
+    welcome: {"enable":false,"interval":30},
+    start_time: "2020-10-30",
+    passwords: ["efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec", ],
+    is_post: true,
+    lock: false,
+    author: "Megan",
+    share: {"twitter":true,"facebook":true,"weibo":true,"qq":true,"wechat":true},
+    mathjax: true,
+    page_type: "",
+    root: "/"
+  };
+</script>
+
+  
+<script src="/vendor/sha256.min.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/index.js"></script>
+<script src="/vendor/qrcode.min.js"></script>
+
+
+  
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/touch-icon.png">
+  
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/styles/components/highlight/highlight.css">
+
+
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+  <body>
+    <header class="site-header">
+  <div class="site-header-brand">
+    
+      <span class="site-header-brand-title">
+        <a href="/">Megan's Blog</a>
+      </span>
+    
+    
+  </div>
+  <div class="site-header-right">
+    <nav class="site-header-navigation">
+      
+        <a href="/" target="_self">Home</a>
+      
+        <a href="/archives/" target="_self">Archives</a>
+      
+        <a href="/about/" target="_self">About</a>
+      
+    </nav>
+    <div class="site-header-btn">
+      
+        <a href="https://github.com/MeganZhouT/MeganzhouT.github.io" target="_blank" id="site-github">
+          <i class="fa fa-github-alt"></i>
+        </a>
+      
+      <a href="javascript:void(0);" id="site-search">
+        <i class="fa fa-search"></i>
+      </a>
+      <a href="javascript:void(0);" id="site-nav-btn">
+        <i class="fa fa-ellipsis-v"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<nav class="table-content" id="site-nav">
+  <div class="table-content-title">
+    <span>导航</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc">
+      
+        <li class="toc-item">
+          <a href="/" target="_self">
+            Home
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/archives/" target="_self">
+            Archives
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/about/" target="_self">
+            About
+          </a>
+        </li>
+      
+    </ol>
+  </div>
+</nav>
+<div id="site-process"></div>
+    <main>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2020-10-30
+    </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    Project Summary
+  </h1>
+  
+  <article class="passage-article">
+    <h3 id="What-is-my-Project"><a href="#What-is-my-Project" class="headerlink" title="What is my Project?"></a>What is my Project?</h3><p>I spent approximately three months completing my project, Automatic Music Genre Classification. The objective was to use machine learning algorithms to classify different music genres (classical, metal, hip-hop, blues, pop, and reggae). Although their distinctness in terms of beats and melodies makes them easy to classify by humans, they remained difficult to classify by computers. With the help of teachers, I eventually finished this tough yet interesting project.</p>
+<h3 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure"></a>Procedure</h3><p>The first step was data pre-processing, which entails trying to extract, load, and transform raw data from analog signals to digital signals which can be understood by the computers. I started by importing Pandas package to help read and rearrange the data. Then, the data had to be split into two parts, training data and testing data. Training data is used to train the model to attain a higher accuracy. Testing data is used to test the accuracy of the model. It is worth noting the proportion of the training data and testing data. There will be overfitting if the amount of training data is so small that the model excessively fits the arrangement of data while underfitting when the amount of training data is too large that the model cannot effectively fit the arrangement of the data. For this project, the proportion is 0.85.</p>
+<p>The second step was to use machine learning algorithms to make classifications. In this process, I used a total of four different algorithms. The first one is called K-Nearest Neighbor (KNN), which occurs when the test data matches more than one training data and is classified to more than one group. It measures the distance between different eigenvalue and groups it into the largest category when there is K nearest samples. The second machine learning algorithm is called random forest. Every tree is a classifier, and every tree has the vote about the classification; it collects all votes and specifies the category with the most votes as the final output. The third one is Support Vector Machine, which uses a plane representing the minimum distance between two sets of points to classify the data. The last one is Neural Network, which occurs based on human Neural Network. The data will go through input layer, hidden layer, output lay and finally get the classification result.</p>
+<h3 id="Challenges-Overcome"><a href="#Challenges-Overcome" class="headerlink" title="Challenges Overcome"></a>Challenges Overcome</h3><p>The biggest challenge during this project was mathematics. I especially struggled to understand the theory of confusion matrix. At first, I consulted the internet for help, but much of the information was not clearly explained. I eventually found some professional online sources that explained the theory in detail and also provided graphs for better comprehension. My tutor explained the procedure for me line by line. He even explained the program parameter in detail to give me a clearer understanding of it. After the preview, I was able to understand the concept and the parameter of the confusion matrix.</p>
+<h3 id="Results-and-Discussion"><a href="#Results-and-Discussion" class="headerlink" title="Results and Discussion"></a>Results and Discussion</h3><p>After applying the four machine learning algorithms, I got the following results. KNN has the maximum accuracy in 0.671 with 8 neighbors, which means that around 67 percent of the data is correctly predicted. KNN is more accurate in classifying classical music and blues, while it often mistakes hip-hop for metal. In random forest, the maximum accuracy is 0.653 with 19 estimators. Random forest has the highest accuracy in classifying classical music, blues, and pop but it has the lowest accuracy in metal and reggae. The application of Support Vector Machine (SVM) has an accuracy of 0.53. It is more accurate in classifying classical music and blues, while it is less accurate in classifying metal and reggae. The Neural Network has an accuracy of 0.53. It had the highest accuracy in classifying classical music, blues, and pop but it had the lowest accuracy in metal and reggae. Overall, in this sample, the application of KNN’s result is more accurate. All four of the machine learning algorithms were more accurate in classifying classical music and blues, and less accurate when classifying metal and reggae.</p>
+
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#What-is-my-Project"><span class="toc-text">What is my Project?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Procedure"><span class="toc-text">Procedure</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Challenges-Overcome"><span class="toc-text">Challenges Overcome</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Results-and-Discussion"><span class="toc-text">Results and Discussion</span></a></li></ol>
+  </div>
+</aside>
+  
+  
+</div>
+
+    </main>
+    
+    <div class="site-footer-wrapper">
+  <footer class="site-footer">
+    
+    <div class="site-footer-info">
+      <i class="fa fa-clock-o"></i> 本站已稳定运行<span id="site-time"></span>
+    </div>
+    
+    
+    <div class="site-footer-info">
+      <i class="fa fa-copyright"></i> 
+      2019 <a href="https://github.com/dongyuanxin/theme-ad/" target="_blank">Theme-AD</a>.
+      Created by <a href="https://godbmw.com/" target="_blank">GodBMW</a>.
+      All rights reserved.
+    </div>
+  </footer>
+</div>
+    <div id="site-layer" style="display:none;">
+  <div class="site-layer-content">
+    <div class="site-layer-header">
+      <span class="site-layer-header-title" id="site-layer-title"></span>
+      <i class="fa fa-close" id="site-layer-close"></i>
+    </div>
+    <div class="site-layer-body" id="site-layer-container">
+      <div class="site-layer-input" id="site-layer-search" style="display: none;">
+        <div class="site-layer-input-choose">
+          <a href="javascript:void(0);" title="Change Search Engine">Google</a>
+        </div>
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+      
+        <div class="site-layer-reward" id="site-layer-reward" style="display: none;">
+          
+            <div>
+              <img src="/images/wechat.png" alt="WeChat">
+              
+                <p>WeChat</p>
+              
+            </div>
+          
+            <div>
+              <img src="/images/alipay.png" alt="AliPay">
+              
+                <p>AliPay</p>
+              
+            </div>
+          
+        </div>
+      
+      <div id="site-layer-welcome" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+    
+
+<div class="bottom-bar">
+  <div class="bottom-bar-left">
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="bottom-bar-right">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <a href="javascript:void(0);" id="site-toggle-share-btn">
+      <i class="fa fa-share-alt"></i>
+    </a>
+    
+      <a href="javascript:void(0);" id="site-reward">
+        <i class="fa fa-thumbs-up"></i>
+      </a>
+    
+    <a href="javascript:void(0);" id="back-top-btn">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+</div>
+    <div id="share-btn">
+  
+    <a id="share-btn-twitter" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+  
+  
+    <a id="share-btn-facebook" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-facebook"></i>
+    </a>
+  
+  
+    <a id="share-btn-weibo" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-weibo"></i>
+    </a>
+  
+  
+    <a id="share-btn-qq" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-qq"></i>
+    </a>
+  
+  
+    <a id="share-btn-wechat" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-wechat"></i>
+    </a>
+  
+</div>
+    
+
+
+
+
+
+    
+  </body>
+</html>
